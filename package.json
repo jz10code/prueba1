@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "pre:build":"node ./scripts/create-env.js",
-    "build": "webpack --mode production",
+    "build": "webpack --mode production --config weback.config.js",
     "dev": "webpack --config webpack.config.dev.js",
     "build:watch": "webpack --watch --config webpack.config.js",
     "start": "webpack serve --config webpack.config.dev.js"
